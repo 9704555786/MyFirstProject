@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-06T16:14:07 IST" name="Default suite" finished-at="2022-12-06T16:14:32 IST" duration-ms="24919">
+    <groups>
+    </groups>
+    <test started-at="2022-12-06T16:14:07 IST" name="Default test" finished-at="2022-12-06T16:14:32 IST" duration-ms="24919">
+      <class name="pro.iqcentestlayer.IqcenLoginTest">
+        <test-method is-config="true" signature="OnStart()[pri:0, instance:pro.iqcentestlayer.IqcenLoginTest@f5ac9e4]" started-at="2022-12-06T16:14:07 IST" name="OnStart" finished-at="2022-12-06T16:14:20 IST" duration-ms="12905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OnStart -->
+        <test-method signature="Register()[pri:0, instance:pro.iqcentestlayer.IqcenLoginTest@f5ac9e4]" started-at="2022-12-06T16:14:20 IST" name="Register" finished-at="2022-12-06T16:14:32 IST" duration-ms="11988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+        <test-method is-config="true" signature="closure()[pri:0, instance:pro.iqcentestlayer.IqcenLoginTest@f5ac9e4]" started-at="2022-12-06T16:14:32 IST" name="closure" finished-at="2022-12-06T16:14:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closure -->
+      </class> <!-- pro.iqcentestlayer.IqcenLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

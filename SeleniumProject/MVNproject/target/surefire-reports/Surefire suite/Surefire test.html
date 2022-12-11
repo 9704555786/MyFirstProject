@@ -1,0 +1,344 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Nov 21 18:45:40 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>82 seconds (82896 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DemoPro1.DayT5Test.testOneA()'><b>testOneA</b><br>Test class: DemoPro1.DayT5Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method testOneA but has not been marked @Optional or defined
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1894287849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1894287849'><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method testOneA but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>DemoPro1.DayT5Test@7ce3cb8e</td></tr>
+<tr>
+<td title='DemoPro1.DayT5Test.testThreeC()'><b>testThreeC</b><br>Test class: DemoPro1.DayT5Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URLx&apos; is required by @Test on method testThreeC but has not been marked @Optional or defined
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace719146276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace719146276'><pre>org.testng.TestNGException: 
+Parameter &apos;URLx&apos; is required by @Test on method testThreeC but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>DemoPro1.DayT5Test@7ce3cb8e</td></tr>
+<tr>
+<td title='DemoPro1.DayT5Test.testTwoB()'><b>testTwoB</b><br>Test class: DemoPro1.DayT5Test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method testTwoB but has not been marked @Optional or defined
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1066656936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1066656936'><pre>org.testng.TestNGException: 
+Parameter &apos;URL&apos; is required by @Test on method testTwoB but has not been marked @Optional or defined
+
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:806)
+	at org.testng.TestRunner.run(TestRunner.java:601)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+</pre></div></td>
+<td>0</td>
+<td>DemoPro1.DayT5Test@7ce3cb8e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DemoPro1.DayT3Test.testHomepage()'><b>testHomepage</b><br>Test class: DemoPro1.DayT3Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT3Test@4313f5bc</td></tr>
+<tr>
+<td title='DemoPro1.DayT5Test.testFiveE()'><b>testFiveE</b><br>Test class: DemoPro1.DayT5Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT5Test@7ce3cb8e</td></tr>
+<tr>
+<td title='DemoPro1.DayT4Test.Amezon()'><b>Amezon</b><br>Test class: DemoPro1.DayT4Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT4Test@10e92f8f</td></tr>
+<tr>
+<td title='DemoPro1.DayT6Test.loginfuctionality()'><b>loginfuctionality</b><br>Test class: DemoPro1.DayT6Test<br>Parameters: Rohan, 698710</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT6Test@78b66d36</td></tr>
+<tr>
+<td title='Listeners.DayT7Test.ClassSeven()'><b>ClassSeven</b><br>Test class: Listeners.DayT7Test</td>
+<td></td>
+<td>11</td>
+<td>Listeners.DayT7Test@69b2283a</td></tr>
+<tr>
+<td title='DemoPro1.DayT4Test.macys()'><b>macys</b><br>Test class: DemoPro1.DayT4Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT4Test@10e92f8f</td></tr>
+<tr>
+<td title='Spack.ClassEightTest.Two()'><b>Two</b><br>Test class: Spack.ClassEightTest</td>
+<td></td>
+<td>0</td>
+<td>Spack.ClassEightTest@659a969b</td></tr>
+<tr>
+<td title='Apack.ClassThreeTest.Two()'><b>Two</b><br>Test class: Apack.ClassThreeTest</td>
+<td></td>
+<td>0</td>
+<td>Apack.ClassThreeTest@48fa0f47</td></tr>
+<tr>
+<td title='Rpack.ClassSixTest.Two()'><b>Two</b><br>Test class: Rpack.ClassSixTest</td>
+<td></td>
+<td>0</td>
+<td>Rpack.ClassSixTest@1d119efb</td></tr>
+<tr>
+<td title='DemoPro1.POITest.OneTest()'><b>OneTest</b><br>Test class: DemoPro1.POITest</td>
+<td></td>
+<td>20</td>
+<td>DemoPro1.POITest@bef2d72</td></tr>
+<tr>
+<td title='DemoPro1.DayT2Test.SampleAutomation()'><b>SampleAutomation</b><br>Test class: DemoPro1.DayT2Test</td>
+<td></td>
+<td>37</td>
+<td>DemoPro1.DayT2Test@5e316c74</td></tr>
+<tr>
+<td title='DemoPro1.DayT6Test.loginfuctionality()'><b>loginfuctionality</b><br>Test class: DemoPro1.DayT6Test<br>Parameters: Amol, 12345</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT6Test@78b66d36</td></tr>
+<tr>
+<td title='DemoPro1.DayT6Test.loginfuctionality()'><b>loginfuctionality</b><br>Test class: DemoPro1.DayT6Test<br>Parameters: Shubham, 11121314</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT6Test@78b66d36</td></tr>
+<tr>
+<td title='DemoPro1.OneTest.mOne()'><b>mOne</b><br>Test class: DemoPro1.OneTest</td>
+<td></td>
+<td>14</td>
+<td>DemoPro1.OneTest@5223e5ee</td></tr>
+<tr>
+<td title='Rpack.ClassFiveTest.Two()'><b>Two</b><br>Test class: Rpack.ClassFiveTest</td>
+<td></td>
+<td>0</td>
+<td>Rpack.ClassFiveTest@22a637e7</td></tr>
+<tr>
+<td title='DemoPro1.DayT4Test.Dmart()'><b>Dmart</b><br>Test class: DemoPro1.DayT4Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT4Test@10e92f8f</td></tr>
+<tr>
+<td title='DemoPro1.DayT4Test.flipkart()'><b>flipkart</b><br>Test class: DemoPro1.DayT4Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT4Test@10e92f8f</td></tr>
+<tr>
+<td title='Rpack.ClassFourTest.Two()'><b>Two</b><br>Test class: Rpack.ClassFourTest</td>
+<td></td>
+<td>0</td>
+<td>Rpack.ClassFourTest@6fe7aac8</td></tr>
+<tr>
+<td title='DemoPro1.DayT3Test.testLogin()'><b>testLogin</b><br>Test class: DemoPro1.DayT3Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT3Test@4313f5bc</td></tr>
+<tr>
+<td title='Apack.ClassTwoTest.Two()'><b>Two</b><br>Test class: Apack.ClassTwoTest</td>
+<td></td>
+<td>0</td>
+<td>Apack.ClassTwoTest@6ac13091</td></tr>
+<tr>
+<td title='Spack.ClassSevenTest.Two()'><b>Two</b><br>Test class: Spack.ClassSevenTest</td>
+<td></td>
+<td>0</td>
+<td>Spack.ClassSevenTest@76908cc0</td></tr>
+<tr>
+<td title='Apack.ClassOneTest.one()'><b>one</b><br>Test class: Apack.ClassOneTest</td>
+<td></td>
+<td>0</td>
+<td>Apack.ClassOneTest@6193932a</td></tr>
+<tr>
+<td title='DemoPro1.DayT3Test.testRegistration()'><b>testRegistration</b><br>Test class: DemoPro1.DayT3Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT3Test@4313f5bc</td></tr>
+<tr>
+<td title='DemoPro1.DayT5Test.testFourD()'><b>testFourD</b><br>Test class: DemoPro1.DayT5Test</td>
+<td></td>
+<td>0</td>
+<td>DemoPro1.DayT5Test@7ce3cb8e</td></tr>
+</table><p>
+</body>
+</html>

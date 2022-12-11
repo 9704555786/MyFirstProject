@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="27" passed="24" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-21T18:45:40 IST" name="Surefire suite" finished-at="2022-11-21T18:47:03 IST" duration-ms="82896">
+    <groups>
+    </groups>
+    <test started-at="2022-11-21T18:45:40 IST" name="Surefire test" finished-at="2022-11-21T18:47:03 IST" duration-ms="82896">
+      <class name="Listeners.DayT7Test">
+        <test-method signature="ClassSeven()[pri:0, instance:Listeners.DayT7Test@69b2283a]" started-at="2022-11-21T18:46:52 IST" name="ClassSeven" finished-at="2022-11-21T18:47:03 IST" duration-ms="11028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClassSeven -->
+      </class> <!-- Listeners.DayT7Test -->
+      <class name="Spack.ClassEightTest">
+        <test-method signature="Two()[pri:0, instance:Spack.ClassEightTest@659a969b]" started-at="2022-11-21T18:47:03 IST" name="Two" finished-at="2022-11-21T18:47:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two -->
+      </class> <!-- Spack.ClassEightTest -->
+      <class name="DemoPro1.POITest">
+        <test-method signature="OneTest()[pri:0, instance:DemoPro1.POITest@bef2d72]" started-at="2022-11-21T18:46:32 IST" name="OneTest" finished-at="2022-11-21T18:46:52 IST" duration-ms="20058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OneTest -->
+      </class> <!-- DemoPro1.POITest -->
+      <class name="Apack.ClassThreeTest">
+        <test-method signature="Two()[pri:0, instance:Apack.ClassThreeTest@48fa0f47]" started-at="2022-11-21T18:45:40 IST" name="Two" finished-at="2022-11-21T18:45:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two -->
+      </class> <!-- Apack.ClassThreeTest -->
+      <class name="DemoPro1.DayT5Test">
+        <test-method signature="testFiveE()[pri:0, instance:DemoPro1.DayT5Test@7ce3cb8e]" started-at="2022-11-21T18:46:18 IST" name="testFiveE" finished-at="2022-11-21T18:46:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFiveE -->
+        <test-method signature="testFourD()[pri:0, instance:DemoPro1.DayT5Test@7ce3cb8e]" started-at="2022-11-21T18:46:18 IST" name="testFourD" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFourD -->
+        <test-method signature="testOneA(java.lang.String)[pri:0, instance:DemoPro1.DayT5Test@7ce3cb8e]" started-at="2022-11-21T18:46:18 IST" name="testOneA" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method testOneA but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method testOneA but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOneA -->
+        <test-method signature="testThreeC(java.lang.String)[pri:0, instance:DemoPro1.DayT5Test@7ce3cb8e]" started-at="2022-11-21T18:46:18 IST" name="testThreeC" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URLx' is required by @Test on method testThreeC but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URLx' is required by @Test on method testThreeC but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testThreeC -->
+        <test-method signature="testTwoB(java.lang.String)[pri:0, instance:DemoPro1.DayT5Test@7ce3cb8e]" started-at="2022-11-21T18:46:18 IST" name="testTwoB" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'URL' is required by @Test on method testTwoB but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'URL' is required by @Test on method testTwoB but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:267)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTwoB -->
+      </class> <!-- DemoPro1.DayT5Test -->
+      <class name="Rpack.ClassSixTest">
+        <test-method signature="Two()[pri:0, instance:Rpack.ClassSixTest@1d119efb]" started-at="2022-11-21T18:47:03 IST" name="Two" finished-at="2022-11-21T18:47:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two -->
+      </class> <!-- Rpack.ClassSixTest -->
+      <class name="DemoPro1.DayT3Test">
+        <test-method is-config="true" signature="StartProgram()[pri:0, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="StartProgram" finished-at="2022-11-21T18:46:18 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartProgram -->
+        <test-method signature="testRegistration()[pri:1, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="testRegistration" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="EndProgram()[pri:0, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="EndProgram" finished-at="2022-11-21T18:46:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndProgram -->
+        <test-method is-config="true" signature="StartProgram()[pri:0, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="StartProgram" finished-at="2022-11-21T18:46:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartProgram -->
+        <test-method signature="testLogin()[pri:2, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="testLogin" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="EndProgram()[pri:0, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="EndProgram" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndProgram -->
+        <test-method signature="testHomepage()[pri:3, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="testHomepage" finished-at="2022-11-21T18:46:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHomepage -->
+        <test-method is-config="true" signature="StartProgram()[pri:0, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="StartProgram" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartProgram -->
+        <test-method is-config="true" signature="EndProgram()[pri:0, instance:DemoPro1.DayT3Test@4313f5bc]" started-at="2022-11-21T18:46:18 IST" name="EndProgram" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndProgram -->
+      </class> <!-- DemoPro1.DayT3Test -->
+      <class name="DemoPro1.DayT4Test">
+        <test-method signature="Amezon()[pri:0, instance:DemoPro1.DayT4Test@10e92f8f]" started-at="2022-11-21T18:46:18 IST" name="Amezon" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Amezon -->
+        <test-method signature="Dmart()[pri:0, instance:DemoPro1.DayT4Test@10e92f8f]" started-at="2022-11-21T18:46:18 IST" name="Dmart" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dmart -->
+        <test-method signature="flipkart()[pri:0, instance:DemoPro1.DayT4Test@10e92f8f]" started-at="2022-11-21T18:46:18 IST" name="flipkart" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flipkart -->
+        <test-method signature="macys()[pri:0, instance:DemoPro1.DayT4Test@10e92f8f]" started-at="2022-11-21T18:46:18 IST" name="macys" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- macys -->
+      </class> <!-- DemoPro1.DayT4Test -->
+      <class name="Apack.ClassOneTest">
+        <test-method signature="one()[pri:0, instance:Apack.ClassOneTest@6193932a]" started-at="2022-11-21T18:45:40 IST" name="one" finished-at="2022-11-21T18:45:40 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- one -->
+      </class> <!-- Apack.ClassOneTest -->
+      <class name="Apack.ClassTwoTest">
+        <test-method signature="Two()[pri:0, instance:Apack.ClassTwoTest@6ac13091]" started-at="2022-11-21T18:45:40 IST" name="Two" finished-at="2022-11-21T18:45:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two -->
+      </class> <!-- Apack.ClassTwoTest -->
+      <class name="Rpack.ClassFiveTest">
+        <test-method signature="Two()[pri:0, instance:Rpack.ClassFiveTest@22a637e7]" started-at="2022-11-21T18:47:03 IST" name="Two" finished-at="2022-11-21T18:47:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two -->
+      </class> <!-- Rpack.ClassFiveTest -->
+      <class name="Spack.ClassSevenTest">
+        <test-method signature="Two()[pri:0, instance:Spack.ClassSevenTest@76908cc0]" started-at="2022-11-21T18:47:03 IST" name="Two" finished-at="2022-11-21T18:47:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two -->
+      </class> <!-- Spack.ClassSevenTest -->
+      <class name="DemoPro1.OneTest">
+        <test-method signature="mOne()[pri:0, instance:DemoPro1.OneTest@5223e5ee]" started-at="2022-11-21T18:46:18 IST" name="mOne" finished-at="2022-11-21T18:46:32 IST" duration-ms="14175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mOne -->
+      </class> <!-- DemoPro1.OneTest -->
+      <class name="DemoPro1.DayT6Test">
+        <test-method signature="loginfuctionality(java.lang.String,java.lang.String)[pri:0, instance:DemoPro1.DayT6Test@78b66d36]" started-at="2022-11-21T18:46:18 IST" name="loginfuctionality" data-provider="getData" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amol]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfuctionality -->
+        <test-method signature="loginfuctionality(java.lang.String,java.lang.String)[pri:0, instance:DemoPro1.DayT6Test@78b66d36]" started-at="2022-11-21T18:46:18 IST" name="loginfuctionality" data-provider="getData" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rohan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[698710]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfuctionality -->
+        <test-method signature="loginfuctionality(java.lang.String,java.lang.String)[pri:0, instance:DemoPro1.DayT6Test@78b66d36]" started-at="2022-11-21T18:46:18 IST" name="loginfuctionality" data-provider="getData" finished-at="2022-11-21T18:46:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shubham]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11121314]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginfuctionality -->
+      </class> <!-- DemoPro1.DayT6Test -->
+      <class name="Rpack.ClassFourTest">
+        <test-method signature="Two()[pri:0, instance:Rpack.ClassFourTest@6fe7aac8]" started-at="2022-11-21T18:47:03 IST" name="Two" finished-at="2022-11-21T18:47:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Two -->
+      </class> <!-- Rpack.ClassFourTest -->
+      <class name="DemoPro1.DayT2Test">
+        <test-method signature="SampleAutomation()[pri:0, instance:DemoPro1.DayT2Test@5e316c74]" started-at="2022-11-21T18:45:40 IST" name="SampleAutomation" finished-at="2022-11-21T18:46:18 IST" duration-ms="37533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SampleAutomation -->
+      </class> <!-- DemoPro1.DayT2Test -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
